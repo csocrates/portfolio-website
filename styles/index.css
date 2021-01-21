@@ -38,15 +38,14 @@ nav {
   flex: 2;
 }
 
+nav .nav-links {
+  list-style-type: none;
+}
+
 nav .nav-links li a {
   color: white;
   justify-content: space-around;
-
   text-decoration: none;
-}
-
-nav .nav-links {
-  list-style-type: none;
 }
 
 .navlink li {
@@ -56,10 +55,61 @@ nav .nav-links {
   text-decoration: none;
 }
 
-.about-me {
-  font-size: 40px;
+h1 {
+  font-size: 80px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .about-me-text {
   font-size: 18px;
+}
+
+.proj-link {
+  color: white;
+  font-size: 20px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.contact-me {
+  font-size: 40px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid rgb(0, 0, 0); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: rgb(26, 92, 29);
+}
+
+/* form background colour*/
+.container {
+  border-radius: 20px;
+  background-color: #585858b4;
+  padding: 20px;
 }

@@ -25,5 +25,29 @@
         </u1>
       </nav>
     </header>
+    <div class = "contact-me">Get in Touch</div>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+      
+          <label for="reason">Reason</label>
+          <select id="reason" name="reason">
+            <option value="hi">Just wanted to say hi :)</option>
+            <option value="hire">Let's talk business...</option>
+            <option value="else">I'd like to give it to you straight, none of this pointless preamble.</option>
+          </select>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
   </body>
 </html>
