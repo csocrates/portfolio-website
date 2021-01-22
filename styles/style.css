@@ -117,7 +117,7 @@ nav {
 }
 
 body {
-  background-image: url("images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 2000px 800px;
