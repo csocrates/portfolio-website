@@ -19,7 +19,7 @@ nav {
 .logo {
   color: rgb(226, 226, 226);
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
   font-size: 20px;
 }
 
@@ -186,4 +186,8 @@ input[type="submit"]:hover {
   border-radius: 20px;
   background-color: #585858b4;
   padding: 20px;
+}
+
+.introduction {
+  text-align: center;
 }
