@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Get In Touch</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Megrim&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <style>
+      body {
+        background-image: url("images/background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
   <body>
-    <header>
-        <div class="logo-container">
-            <!-- <img src="" alt="logo"> -->
-          <h4 class = "logo">SocBoc Development</h4>
-          </div>
-      <nav>
-        <ul class="nav-links">
-            <li ><a class = "nav-link"href = index.html> Home</a></li>
-            <li ><a class = "nav-link"href = about.html> About Me</a></li>
-            <li ><a class = "nav-link"href = projects.html> Projects</a></li>
-            <li ><a class = "nav-link"href = contact.html> Contact Me</a></li>
-        </u1>
-      </nav>
-    </header>
-    <div class = "contact-me">Get in Touch</div>
-    <div class="container">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name...">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-      
-          <label for="reason">Reason</label>
-          <select id="reason" name="reason">
-            <option value="hi">Just wanted to say hi :)</option>
-            <option value="hire">Let's talk business...</option>
-            <option value="else">I'd like to give it to you straight, none of this pointless preamble.</option>
-          </select>
-      
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
+    <nav>
+      <div class="logo">
+        <h4>{ C SOCRATES }</h4>
       </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <script src="app.js"></script>
+
+    <div class="contact-me">Get in Touch</div>
+    <div class="container">
+      <form action="action_page.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name..."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name..."
+        />
+
+        <label for="reason">Reason</label>
+        <select id="reason" name="reason">
+          <option value="hi">Just wanted to say hi :)</option>
+          <option value="hire">Let's talk business...</option>
+          <option value="else">
+            I'd like to give it to you straight, none of this preamble.
+          </option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write something..."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </body>
 </html>
