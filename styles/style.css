@@ -5,6 +5,7 @@
 }
 
 nav {
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -53,13 +54,13 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px), (max-device-width: 1024px) {
   .nav-links {
     width: 50%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (max-device-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -116,6 +117,13 @@ nav {
 }
 
 body {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 2000px 800px;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
   color: #202020;
 }
@@ -129,6 +137,15 @@ main {
 h1 {
   font-size: 80px;
   display: flex;
+}
+
+h2 {
+  font-size: 40px;
+  display: flex;
+}
+
+h3 {
+  font-size: 25px;
 }
 
 p {
@@ -190,4 +207,14 @@ input[type="submit"]:hover {
 
 .introduction {
   text-align: center;
+}
+
+.about-me {
+  text-align: left;
+}
+
+.about-me-text {
+  text-align: left;
+  margin: auto;
+  padding: 20px;
 }
